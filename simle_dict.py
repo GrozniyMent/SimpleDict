@@ -28,9 +28,11 @@ def writeData():
 
     ls.append(t1)
     ls.append(t2)
+    cmd()
 
 def displayData():
     print(ls)
+    cmd()
 
 def removeData():
     index = len(ls)
@@ -43,6 +45,7 @@ def removeData():
     if ch <= index:
         removedElement = ls.pop(ch)
         print(f"You successfully removed element \"{removedElement}\"")
+    cmd()
 
 def cmd():
     con = input("mydict@admin ~$ ")
